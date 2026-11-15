@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page width="600" padding="48" background="#f2efe9" title="slop image site">
+	<fonts>
+		<font name="mono" src="../assets/fonts/CourierCode-Roman.ttf"/>
+		<font name="mono-bold" src="../assets/fonts/CourierCode-Bold.ttf"/>
+	</fonts>
+
+	<style>
+		page { font-family: mono; font-size: 18; color: #242424; line-height: 1.6; }
+		h1 { font-family: mono-bold; font-size: 38; margin: 0 0 28 0; }
+		p { margin: 0 0 18 0; }
+		a { color: #0a58ca; text-decoration: underline; }
+		.muted { color: #7a756c; font-size: 14; }
+		.rule { background: #242424; padding: 1; margin: 32 0 20 0; }
+	</style>
+
+	<h1>SLOP IMAGE SITE</h1>
+
+	<p>a website that is only a png. the layout, the type and the links are rendered by pillow, then mapped back with ismap.</p>
+
+	<p>read the <a href="https://codeberg.org/ywbird">source</a>, or visit <a href="https://meliplug.info">meliplug.info</a>.</p>
+
+	<div class="rule"/>
+
+	<p class="muted">no html. no dom. one image.</p>
+</page>

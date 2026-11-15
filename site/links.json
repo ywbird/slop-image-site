@@ -1,0 +1,23 @@
+{
+  "title": "slop image site",
+  "width": 600,
+  "height": 431,
+  "links": [
+    {
+      "href": "https://codeberg.org/ywbird",
+      "label": "source",
+      "left": 144,
+      "top": 242,
+      "right": 213,
+      "bottom": 271
+    },
+    {
+      "href": "https://meliplug.info",
+      "label": "meliplug.info",
+      "left": 328,
+      "top": 242,
+      "right": 473,
+      "bottom": 271
+    }
+  ]
+}
