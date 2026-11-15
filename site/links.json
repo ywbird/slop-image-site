@@ -4,20 +4,20 @@
   "height": 431,
   "links": [
     {
-      "href": "https://codeberg.org/ywbird",
-      "label": "source",
-      "left": 144,
-      "top": 242,
-      "right": 213,
-      "bottom": 271
+      "href": "https://github.com/ywbird/slop-image-site",
+      "label": "Source: github.com/ywbird/slop-image-site",
+      "left": 30,
+      "top": 319,
+      "right": 528,
+      "bottom": 363
     },
     {
       "href": "https://meliplug.info",
-      "label": "meliplug.info",
-      "left": 328,
-      "top": 242,
-      "right": 473,
-      "bottom": 271
+      "label": "Visit: meliplug.info",
+      "left": 30,
+      "top": 371,
+      "right": 275,
+      "bottom": 415
     }
   ]
 }
