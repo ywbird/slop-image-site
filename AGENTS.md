@@ -21,6 +21,11 @@ Run from the repo root; build paths are cwd-relative.
 
 There is no lint, formatter, pytest, or CI config. Do not assume they exist.
 
+## Git workflow
+
+- Commit whenever changes are made.
+- Push after completing each major task.
+
 ## Pipeline
 
 `document.py` parses XML and resolves the mini CSS -> `layout.py` performs flow
