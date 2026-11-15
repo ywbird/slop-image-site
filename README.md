@@ -1,15 +1,35 @@
 # slop image site
 
+**A website rendered to one PNG, with links that still work.**
+
+Click the links in the image below. On mobile or with a keyboard,
+[open the interactive viewer](https://ywbird.github.io/slop-image-site/) instead.
+
 <a href="https://ywbird.github.io/slop-image-site/">
-  <img ismap width="600" height="431" src="https://ywbird.github.io/slop-image-site/image.png" alt="slop image site — a PNG with clickable links">
+  <img ismap width="600" height="431" src="https://ywbird.github.io/slop-image-site/image.png" alt="slop image site demo: source and meliplug.info links inside this PNG">
 </a>
 
-Live example: <https://ywbird.github.io/slop-image-site/> — click a link.
+[Build](#build) · [README embed](#readme-embed) · [Source format](#source-format) · [Project notes](#project-notes)
 
-The page is written as a small XML document with a mini CSS dialect, laid out
-with Pillow, and rendered to `image.png` plus `links.json`. A tiny viewer turns
-the link rectangles into clickable areas, and an `ismap` wrapper can make the
-image itself clickable from a README.
+## From XML to clicks
+
+Write a small XML document with a mini CSS dialect. Pillow lays out the text
+and draws the page; the build also records where each link belongs.
+
+```text
+pages/index.xml
+      │  layout + render with Pillow
+      ├── image.png     visible page
+      └── links.json    link rectangles
+```
+
+A tiny HTML/JS viewer overlays the link rectangles on the image. It also
+handles the `?x,y` coordinates sent by an `ismap` image in a README, redirecting
+the click to its destination. The page's appearance is a bitmap, not a browser
+layout; the viewer supplies the interaction.
+
+The earlier [image-site proof of concept (PoC)](https://codeberg.org/ywbird/image-site)
+lives on Codeberg. This repository is the AI:X slop implementation.
 
 ## Build
 
@@ -18,17 +38,18 @@ uv sync
 uv run image-site build
 ```
 
-Outputs:
+By default, `pages/index.xml` builds into `site/`:
 
-```
-site/image.png
-site/links.json
-site/index.html
-site/link.js
-site/.nojekyll
+```text
+site/
+├── image.png
+├── links.json
+├── index.html
+├── link.js
+└── .nojekyll
 ```
 
-Preview it:
+### Local preview
 
 ```sh
 python -m http.server 8000 -d site
@@ -36,7 +57,7 @@ python -m http.server 8000 -d site
 
 Open <http://localhost:8000/>.
 
-Test and type-check:
+### Tests and types
 
 ```sh
 uv run python -m unittest discover -s tests -v
@@ -182,7 +203,26 @@ Copy `site/` to any static host. The README image and `site/links.json` must be
 regenerated together; keep caching disabled or revalidated for both so stale
 coordinates are not served with a new image.
 
-## Fonts
+## Project notes
+
+### AI usage
+
+<a href="https://0rwx.com/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/readme/AI-X-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/readme/AI-X-light.svg">
+    <img src="assets/readme/AI-X-light.svg" width="64" height="64" alt="AI:X — Execute, AI-made">
+  </picture>
+</a>
+
+**AI:X — Execute / AI-made**, using the [0rwx framework](https://0rwx.com/).
+The author delegates implementation to AI without personally reviewing the
+generated code. The `slop-` prefix makes that distinction explicit.
+
+The official AI:X marks are included unchanged from 0rwx.com and are
+[CC0 / public domain](https://creativecommons.org/publicdomain/zero/1.0/).
+
+### Fonts
 
 Courier Code is included under `assets/fonts/`. See
 `assets/fonts/Courier Code Read Me.txt`; the license permits redistribution.
