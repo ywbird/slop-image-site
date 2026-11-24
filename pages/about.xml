@@ -13,18 +13,12 @@
 		h1 { font-family: mono-bold; font-size: 40; line-height: 1.15; margin: 20 0 24; }
 		h2 { font-family: mono-bold; font-size: 30; line-height: 1.15; margin: 24 0 20; }
 
-		.nav { margin: 0 0 12; }
-		.rule { background: #808080; padding: 1 0 0; margin: 10 0; }
 		.quote { font-family: mono-bold; font-size: 24; line-height: 1.15; margin: 0 0 20; }
 		.li { padding: 0 0 0 16; margin: 0; }
 		.li-last { padding: 0 0 0 16; margin: 0 0 20; }
 		.small { font-size: 17; }
 		.caption { font-size: 17; margin: 0 0 20; }
 	</style>
-
-	<h1>rawplug</h1>
-	<p class="nav"><a href="https://raw.meliplug.info/">index</a> | <a href="https://raw.meliplug.info/about">about</a> | <a href="https://raw.meliplug.info/posts">posts</a></p>
-	<div class="rule"></div>
 
 	<h1>about</h1>
 
@@ -44,10 +38,4 @@
 	<p>*</p>
 	<p><a href="https://raw.meliplug.info/assets/pfp-bg.webp">[pfp image: pfp-bg.webp]</a></p>
 	<p class="caption">drawn by my aunt</p>
-
-	<div class="rule"></div>
-
-	<p>if you have any opinion about the subject or a message to me, let's talk: <a href="https://raw.meliplug.info/about/#contact:~:text=contact">contact</a></p>
-	<p>(sorry if my english is bad. english isn't my first language)</p>
-	<p>© 2026 by <a href="http://meliplug.info/">ywbird</a>. All rights reserved.</p>
 </page>
