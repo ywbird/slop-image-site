@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page width="640" padding="0" background="#f3f0e7" title="about - doi / ywbird">
+	<fonts>
+		<font name="mono" src="../assets/fonts/CourierCode-Roman.ttf"/>
+		<font name="mono-bold" src="../assets/fonts/CourierCode-Bold.ttf"/>
+	</fonts>
+
+	<style>
+		page { font-family: mono; font-size: 16; color: #17201a; line-height: 1.45; }
+		p { margin: 0; }
+		a { color: #17201a; text-decoration: underline; }
+
+		.hero { background: #17201a; color: #f3f0e7; padding: 30 40 28; }
+		.kicker { font-family: mono-bold; font-size: 13; line-height: 1; color: #d6ee85; margin: 0 0 26; }
+		h1 { font-family: mono-bold; font-size: 64; line-height: 1.02; color: #f3f0e7; margin: 0 0 24; }
+		.accent { color: #d6ee85; }
+		.quote { font-size: 17; line-height: 1.35; color: #d6ee85; margin: 0 0 18; }
+		.role { font-size: 15; color: #a8b2a9; margin: 0; }
+
+		.body { padding: 32 40 34; }
+		.label { font-family: mono-bold; font-size: 12; line-height: 1; color: #6c7568; margin: 0 0 14; }
+		.intro { font-size: 20; line-height: 1.4; margin: 0 0 34; }
+		.note { font-size: 14; color: #6c7568; margin: 0 0 12; }
+		.row { font-size: 18; line-height: 1.9; margin: 0; }
+		.key { color: #6c7568; }
+
+		.links { background: #d6ee85; padding: 24 40; }
+		.links-label { font-family: mono-bold; font-size: 12; line-height: 1; color: #17201a; margin: 0 0 12; }
+		.links-row { font-size: 16; line-height: 1.7; margin: 0; }
+
+		.footer { background: #17201a; padding: 16 40; }
+		.footer-note { font-size: 12; line-height: 1.5; color: #a8b2a9; margin: 0; }
+		.footer-link { color: #a8b2a9; }
+	</style>
+
+	<div class="hero">
+		<p class="kicker">rawplug / about</p>
+		<h1>doi<br/><span class="accent">ywbird.</span></h1>
+		<p class="quote">"i propel myself with an advanced sense of boredom."</p>
+		<p class="role">student / developer</p>
+	</div>
+
+	<div class="body">
+		<p class="label">01 - hello</p>
+		<p class="intro">hello, my name is doi and<br/>my nickname is ywbird.<br/>i love (recreational|creative)<br/>(programming|coding).</p>
+
+		<p class="label">02 - contact</p>
+		<p class="note">in descending order of check frequency:</p>
+		<p class="row"><span class="key">discord:</span> @ywbird</p>
+		<p class="row"><span class="key">twitter:</span> <a href="https://twitter.com/ywbird">@ywbird</a></p>
+		<p class="row"><span class="key">email:</span>   <a href="mailto:ywbird@naver.com">ywbird@naver.com</a></p>
+		<p class="row"><span class="key">etc:</span>     probably @ywbird</p>
+	</div>
+
+	<div class="links">
+		<p class="links-label">elsewhere</p>
+		<p class="links-row"><a href="https://meliplug.info">meliplug.info</a> / <a href="https://github.com/ywbird">github.com/ywbird</a><br/><a href="https://codeberg.org/ywbird">codeberg.org/ywbird</a> / <a href="https://meliplug.info/ywbird.asc">pgp key</a></p>
+	</div>
+
+	<div class="footer">
+		<p class="footer-note">© 2026 doi / ywbird - from <a class="footer-link" href="https://raw.meliplug.info/about/">raw.meliplug.info/about</a></p>
+	</div>
+</page>
