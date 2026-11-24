@@ -14,18 +14,20 @@
 		h2 { font-family: mono-bold; font-size: 30; line-height: 1.15; margin: 24 0 20; }
 
 		.quote { font-family: mono-bold; font-size: 24; line-height: 1.15; margin: 0 0 20; }
+		.bold { font-family: mono-bold; }
 		.li { padding: 0 0 0 16; margin: 0; }
 		.li-last { padding: 0 0 0 16; margin: 0 0 20; }
-		.small { font-size: 17; }
+		.small { font-size: 16; }
 		.caption { font-size: 17; margin: 0 0 20; }
 	</style>
 
 	<h1>about</h1>
 
 	<p class="quote">i propel myself with an advanced sense of boredom.</p>
-	<p>hello, my name is doi and my nickname is ywbird.</p>
-	<p>i'm student, developer.</p>
+	<p>hello, my name is <span class="bold">**doi**</span> and my nickname is <span class="bold">**ywbird**</span>.</p>
 	<p>i love (recreational|creative) (programming|coding).</p>
+	<p>i post technical things on my blog, <a href="https://meliplug.info">[meliplug]<span class="small">(https://meliplug.info)</span></a></p>
+	<p>and on <a href="https://raw.meliplug.info">[rawplug]<span class="small">(https://raw.meliplug.info)</span></a>, i post subjects close to my life.</p>
 
 	<h2>contact</h2>
 	<p>in descending order of check frequency:</p>
