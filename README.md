@@ -78,7 +78,9 @@ to the generated image width so coordinates match.
 ```
 
 Clicks send `?x,y` to the viewer, which redirects to the matching link. If no
-link matches, the viewer is shown. The viewer is also the keyboard and mobile
+link matches, the browser goes back to the page that showed the image (a blank
+area is a "return" click); with no history to return to, the viewer is shown.
+The viewer is also the keyboard and mobile
 entry point.
 
 > **Caveat:** `ismap` coordinates are measured in *displayed* CSS pixels.
